@@ -9,7 +9,8 @@ services:
       - ./frontend:/usr/share/nginx/html
       
   backend:
-    build: ./backend
+    build:
+      context: ./backend
     volumes:
       - ./backend:/app
     ports:

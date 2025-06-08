@@ -8,8 +8,7 @@ WORKDIR /app
 
 # Instalar dependencias
 COPY requirements.txt .
-
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Comando de inicio
 CMD ["python3", "app.py"]
