@@ -63,3 +63,5 @@ docker compose down
 Isto para todos os servizos pero **conserva os datos** da base de datos grazas ao volume `db_data`.
 
 ---
+
+© 2025 - Desenvolvido por Oscar Blanco Lorenzo
