@@ -22,4 +22,42 @@ O proxecto é unha demostración da integración de servizos usando 'Docker Comp
 
 ---
 
+## Comando principais para executar o proxecto
 
+### 1. **Iniciar os servizos**
+
+```bash
+docker compose up
+```
+
+Este comando constrúe a imaxe do backend e arranca os tres contedores.
+
+---
+
+### 2. **Acceder á base de datos manualmente**
+
+Primeiro executamos o seguinte comando para coñecer o nome do contedor da base de datos.
+```bash
+docker ps
+```
+
+Logo conectámonos o contedor con:
+```bash
+docker exec -it <nome_contenedor_db> psql -U user -d mydb
+```
+
+E por último para insertar datos para comprobar a persistencia executamos:
+```bash
+INSERT INTO visitas (ip) VALUES ('168.28.04.13');
+```
+---
+
+### 3. **Deter os servizos**
+
+```bash
+docker compose down
+```
+
+Isto para todos os servizos pero **conserva os datos** da base de datos grazas ao volume `db_data`.
+
+---
