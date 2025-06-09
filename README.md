@@ -24,6 +24,8 @@ O proxecto é unha demostración da integración de servizos usando 'Docker Comp
 
 ## Comando principais para executar o proxecto
 
+Primeiro de todo colocámonos dentro da carpeta do proxecto para poder executar os seguintes comandos.
+
 ### 1. **Iniciar os servizos**
 
 ```bash
